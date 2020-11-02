@@ -5,6 +5,26 @@
     <title>HCI 472 - Animations</title>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+      $("#button-1").click(function(){
+        console.log("logging");
+        $(".circle-1").addClass("circle-1-animate")
+      });
+
+      $("#button-2").click(function(){
+        console.log("logging");
+        $(".circle-2").addClass("circle-2-animate")
+      });
+
+        $("#button-3").click(function(){
+          console.log("logging");
+          $(".circle-3").addClass("circle-3-animate")
+    });
+  });
+    </script>
 
   </head>
 
@@ -18,7 +38,7 @@
             </header>
 
             <aside>
-                <p><a href="" target=""><em>Start</em></a></p>
+                <p><a id="button-1"><em>Start</em></a></p>
                 <div class="circle-1">
                 </div>
                 <h3>Squash & Stretch</h3>
@@ -26,7 +46,7 @@
             </aside>
 
             <aside>
-              <p><a href="" target=""><em>Start</em></a></p>
+              <p><a id="button-2"><em>Start</em></a></p>
               <div class="circle-2">
               </div>
               <h3>Ease in and out</h3>
@@ -34,11 +54,11 @@
             </aside>
 
             <aside>
-              <p><a href="" target=""><em>Start</em></a></p>
+              <p><a id="button-3"><em>Start</em></a></p>
 
                 <div class="circle-3">
               </div>
-              <h3>Follow through and overlap</h3>
+              <h3>Bounce!</h3>
 
             </aside>
 
@@ -55,5 +75,7 @@
     </p>
 </footer>
 
+
   </body>
+
 </html>
