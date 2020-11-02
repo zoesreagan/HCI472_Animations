@@ -1,0 +1,26 @@
+.circle-1 {
+  width: 100px;
+  height: 100px;
+  background-color: #20bf55;
+  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  border-radius: 100%;
+}
+
+
+.circle-2 {
+  width: 100px;
+  height: 100px;
+  background-color: #ff4e00;
+  background-image :linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
+  border-radius: 100%;
+}
+
+
+.circle-3 {
+  width: 100px;
+  height: 100px;
+  background-color: #fad0c4;
+  background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);
+  border-radius: 100%;
+}
