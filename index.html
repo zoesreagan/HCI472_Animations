@@ -11,6 +11,7 @@
     <script>
     $(document).ready(function(){
 
+      // adding CSS animation classes
       $("#button-1").click(function(){
         console.log("logging");
         $(".circle-1").addClass("circle-1-animate")
@@ -26,6 +27,11 @@
           console.log("logging");
           $(".circle-3").addClass("circle-3-animate")
     });
+
+    // Reset function through page reload
+      $(".reset").click(function(){
+        location.reload(true);
+      });
 
   });
     </script>
@@ -44,8 +50,8 @@
                 <p><a id="button-1"><em>Start</em></a></p>
                 <div class="circle-1">
                 </div>
-
                 <h3>Squash & stretch</h3>
+                <p> <a class="reset">Reset</a></p>
 
             </aside>
 
@@ -54,19 +60,24 @@
               <div class="circle-2">
               </div>
               <h3>Ease in and out</h3>
+              <p> <a class="reset">Reset</a></p>
 
             </aside>
 
             <aside>
               <p><a id="button-3"><em>Start</em></a></p>
 
+
                 <div class="circle-3">
               </div>
               <h3>Bounce!</h3>
+              <p> <a class="reset">Reset</a></p>
 
             </aside>
 
         </section>
+
+
 
     </main>
 
