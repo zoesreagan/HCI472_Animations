@@ -1,4 +1,6 @@
 
+/* styling the circles */
+
 .circle-1, .circle-2, .circle-3 {
   border-radius: 100%;
   width: 100px;
@@ -6,6 +8,9 @@
   background-color: #ff4e00;
   background-image :linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
 }
+
+
+/* squash animation */
 
 @-webkit-keyframes squash {
   0%   {height: 100px;
@@ -28,7 +33,7 @@
       }
 }
 
-
+/* jQuery animation class */
 .circle-1-animate {
   animation-name: squash;
   animation-duration: 2.5s;
@@ -37,6 +42,8 @@
 
 }
 
+
+/* ease animation */
 @-webkit-keyframes ease {
   0%   {height: 100px;
         width: 100px;
@@ -46,40 +53,57 @@
         width: 100px;
         transform: translateX(200px);
 
-      }
+    }
 }
+
+/* jQuery animation class */
 .circle-2-animate {
   animation-name: ease;
-  animation-duration: 2.5s;
-  animation-iteration-count: 2;
+  animation-duration: 1.5s;
+  animation-iteration-count: 4;
   animation-direction: alternate;
   animation-timing-function: ease-in-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
   animation-fill-mode: forwards;
 }
 
 
-
+/* bounce animation */
 @-webkit-keyframes bounce {
-  0% { -webkit-transform: translateY(-300px) translateX(25px) scaleY(1.2); }
-  50% { -webkit-transform: translateY(-0px) scaleY(1.2); }
- 55% { -webkit-transform: translateY(0px) scaleY(1.2); }
- 67% { -webkit-transform: translateY(10px) scaleY(1.2); }
- 85% { -webkit-transform: translateY(-100px) scaleY(1.2); }
- 96% { -webkit-transform: translateY(-10px) scaleY(1.2); }
- 100% { -webkit-transform: translateY(0px); }
+  0% {
+     -webkit-transform: translateY(-300px) translateX(25px);
+   }
+
+  40% {
+     -webkit-transform: translateY(0px);
+   }
+
+ 50% {
+    -webkit-transform: translateY(-200px);
+  }
+
+ 60% {
+    -webkit-transform: translateY(0px);
+  }
+
+ 75% {
+   -webkit-transform: translateY(-100px);
+ }
+
+ 90% {
+   -webkit-transform: translateY(0px);
+ }
+
+ 96% {
+   -webkit-transform: translateY(-50px);
+ }
+
+ 100% { -webkit-transform: translateY(0px);
+ }
+
 }
 
+/* jQuery animation class */
 .circle-3-animate {
   animation: bounce 2.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation-direction: alternate;
-  animation-iteration-count: 3;
 
 }
-
-/* .circle-3 {
-  width: 100px;
-  height: 100px;
-  background-color: #fad0c4;
-  background-image: linear-gradient(315deg, #fad0c4 0%, #f1a7f1 74%);
-  border-radius: 100%;
-} */
